@@ -17,7 +17,7 @@ import CharacterCounter from 'flavours/glitch/features/compose/components/charac
 import { length } from 'stringz';
 import { Tesseract as fetchTesseract } from 'flavours/glitch/util/async-components';
 import GIFV from 'flavours/glitch/components/gifv';
-import { me } from 'flavours/glitch/util/initial_state';
+import { me, maxMediaDescChars } from 'flavours/glitch/util/initial_state';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import tesseractCorePath from 'tesseract.js-core/tesseract-core.wasm.js';
 // eslint-disable-next-line import/extensions
@@ -362,10 +362,10 @@ class FocalPointModal extends ImmutablePureComponent {
 
             <div className='setting-text__toolbar'>
               <button disabled={detecting || media.get('type') !== 'image' || is_changing_upload} className='link-button' onClick={this.handleTextDetection}><FormattedMessage id='upload_modal.detect_text' defaultMessage='Detect text from picture' /></button>
-              <CharacterCounter max={1500} text={detecting ? '' : description} />
+              <CharacterCounter max={maxMediaDescChars} text={detecting ? '' : description} />
             </div>
 
-            <Button disabled={!dirty || detecting || isUploadingThumbnail || length(description) > 1500 || is_changing_upload} text={intl.formatMessage(is_changing_upload ? messages.applying : messages.apply)} onClick={this.handleSubmit} />
+            <Button disabled={!dirty || detecting || isUploadingThumbnail || length(description) > maxMediaDescChars || is_changing_upload} text={intl.formatMessage(is_changing_upload ? messages.applying : messages.apply)} onClick={this.handleSubmit} />
           </div>
 
           <div className='focal-point-modal__content'>

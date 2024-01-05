@@ -9,6 +9,12 @@ module.exports = (api) => {
     loose: true,
     modules: false,
     debug: false,
+    include: [
+      'transform-numeric-separator',
+      'transform-optional-chaining',
+      'transform-nullish-coalescing-operator',
+      'transform-class-properties',
+    ],
   };
 
   const config = {

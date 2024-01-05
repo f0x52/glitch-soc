@@ -33,10 +33,11 @@
     "@babel/runtime": "^7.18.9",
     "@gamestdio/websocket": "^0.3.2",
     "@github/webauthn-json": "^0.5.7",
-    "@rails/ujs": "^6.1.6",
-    "array-includes": "^3.1.5",
-    "atrament": "0.2.4",
+    "@rails/ujs": "^6.1.7",
+    "abortcontroller-polyfill": "^1.7.5",
+    "array-includes": "^3.1.6",
     "arrow-key-navigation": "^1.2.0",
+    "atrament": "0.2.4",
     "autoprefixer": "^9.8.8",
     "axios": "^0.27.2",
     "babel-loader": "^8.2.5",
@@ -132,7 +133,7 @@
     "tiny-queue": "^0.2.1",
     "twitter-text": "3.1.0",
     "uuid": "^8.3.1",
-    "webpack": "^4.46.0",
+    "webpack": "^4.47.0",
     "webpack-assets-manifest": "^4.0.6",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^3.3.12",
@@ -163,7 +164,8 @@
     "yargs": "^17.5.1"
   },
   "resolutions": {
-    "kind-of": "^6.0.3"
+    "kind-of": "^6.0.3",
+    "babel-plugin-lodash/@babel/types": "~7.20.0"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.6",

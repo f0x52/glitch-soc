@@ -107,7 +107,7 @@ GEM
       aws-partitions (~> 1, >= 1.651.0)
       aws-sigv4 (~> 1.8)
       jmespath (~> 1, >= 1.6.1)
-    aws-sdk-kms (1.75.0)
+    aws-sdk-kms (1.76.0)
       aws-sdk-core (~> 3, >= 3.188.0)
       aws-sigv4 (~> 1.1)
     aws-sdk-s3 (1.142.0)
@@ -419,6 +419,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.1205)
     mini_mime (1.1.5)
+    mini_portile2 (2.8.5)
     minitest (5.20.0)
     msgpack (1.7.2)
     multi_json (1.15.0)
@@ -439,6 +440,7 @@ GEM
     net-ssh (7.2.1)
     nio4r (2.7.0)
     nokogiri (1.16.0)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     nsa (0.2.8)
       activesupport (>= 4.2, < 7)
@@ -774,7 +776,7 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   active_model_serializers (~> 0.10)
@@ -839,7 +841,7 @@ DEPENDENCIES
   microformats (~> 4.4)
   mime-types (~> 3.4.1)
   net-ldap (~> 0.17)
-  nokogiri (~> 1.13)
+  nokogiri (= 1.16.0)
   nsa (~> 0.2)
   oj (~> 3.13)
   omniauth (~> 2.0)
@@ -929,7 +931,7 @@ CHECKSUMS
   aws-eventstream (1.3.0) sha256=f1434cc03ab2248756eb02cfa45e900e59a061d7fbdc4a9fd82a5dd23d796d3f
   aws-partitions (1.877.0) sha256=9552ed7bbd3700ed1eeb0121c160ceaf64fa5dbaff5a1ff5fe6fd8481ecd9cfd
   aws-sdk-core (3.190.1) sha256=b02aa7981f955c6021405c89b66e99061b99e2edc4f5b48c0f3dc742dd53daaa
-  aws-sdk-kms (1.75.0) sha256=21dbeab2328fa2ae6dbfcc7f11a4b6afb7fcaea02fa83458cb855a989fc3fde3
+  aws-sdk-kms (1.76.0) sha256=e7f75013cba9ba357144f66bbc600631c192e2cda9dd572794be239654e2cf49
   aws-sdk-s3 (1.142.0) sha256=79cd888eca66fd2ef3ae8b74d76173a2eccbeff6a1bba62a60b7c7dadc8dd7e9
   aws-sigv4 (1.8.0) sha256=84dd99768b91b93b63d1d8e53ee837cfd06ab402812772a7899a78f9f9117cbc
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
@@ -1066,6 +1068,7 @@ CHECKSUMS
   mime-types (3.4.1) sha256=6bcf8b0e656b6ae9977bdc1351ef211d0383252d2f759a59ef4bcf254542fc46
   mime-types-data (3.2023.1205) sha256=8c4c79b29b03afdeb6a58c00ef0c5b856cf2371e2edc6cecf9ff33e9c7244a22
   mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
+  mini_portile2 (2.8.5) sha256=7a37db8ae758086c3c3ac3a59c036704d331e965d5e106635e4a42d6e66089ce
   minitest (5.20.0) sha256=a3faf26a757ced073aaae0bd10481340f53e221a4f50d8a6033591555374752e
   msgpack (1.7.2) sha256=59ab62fd8a4d0dfbde45009f87eb6f158ab2628a7c48886b0256f175166baaa8
   multi_json (1.15.0) sha256=1fd04138b6e4a90017e8d1b804c039031399866ff3fbabb7822aea367c78615d
@@ -1079,7 +1082,7 @@ CHECKSUMS
   net-smtp (0.4.0.1) sha256=098d28fab9d9bc280a2cfada77692cdca89c83c6789bdbb8d8429f97f1bf5a33
   net-ssh (7.2.1) sha256=3cd1fabb1f95e36c600ef4469c0482ec9c9505a3a4f461f7262444c2001901c4
   nio4r (2.7.0) sha256=9586a685eca8246d6406e712a525e705d15bb88f709d78fc3f141e864df97276
-  nokogiri (1.16.0) sha256=6f55093bb47e75d412138f4b9462f960d3aad96cb6b43dbe9a3de62c2d31a742
+  nokogiri (1.16.0) sha256=341388184e975d091e6e38ce3f3b3388bfb7e4ac3d790efd8e39124844040bd1
   nsa (0.2.8) sha256=2a2653ebf88dfff8d506264bbe121cf3fd674ae812c1a4a154d6c41b8e0dfacb
   oj (3.16.3) sha256=d0088a0c78ae4aa0eeaeeb9c3a592571432ba39f9829e5ac37b3f24c53eab63c
   omniauth (2.1.2) sha256=def03277298b8f8a5d3ff16cdb2eb5edb9bffed60ee7dda24cc0c89b3ae6a0ce

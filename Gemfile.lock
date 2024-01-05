@@ -130,8 +130,7 @@ GEM
     bindata (2.4.15)
     binding_of_caller (1.0.0)
       debug_inspector (>= 0.0.1)
-    blurhash (0.1.6)
-      ffi (~> 1.14)
+    blurhash (0.1.7)
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     brakeman (5.2.3)
@@ -265,7 +264,7 @@ GEM
     faraday-retry (1.0.3)
     fast_blank (1.0.1)
     fastimage (2.2.6)
-    ffi (1.15.5)
+    ffi (1.16.3)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
       rake
@@ -911,7 +910,7 @@ CHECKSUMS
   better_html (1.0.16) sha256=0b95806bed48f7fed6159663217d1cbcda9691bb6bdd6271ec769df748da5aeb
   bindata (2.4.15) sha256=e567e4278223e041caf4e623de870b2df8a93479d8f13e2b478bad45e0fbc413
   binding_of_caller (1.0.0) sha256=3aad25d1d538fc6e7972978f9bf512ccd992784009947c81633bea776713161d
-  blurhash (0.1.6) sha256=5f03291a929e4ce8a51aa65502347d11fd8fb3d34259b42ac231fbd8780d46e7
+  blurhash (0.1.7) sha256=c8f553d3d0ebf352df3a9d5c8a4ab518c250f9ba24b3314fddc88ee3f173ea14
   bootsnap (1.13.0) sha256=c673282ec0f48506f093ca9acefe0f666d1ab9fda716e49fb95c9fe677653e78
   brakeman (5.2.3) sha256=5b6efb6a1e5c2b79063553647638e17239d2d2f4d50561230c8b0acaae4728d4
   browser (4.2.0) sha256=fc194b422ea8b313f98443c6ec249ccf252e29007ce01bb99ebe828bd7fe3e60
@@ -976,7 +975,7 @@ CHECKSUMS
   faraday-retry (1.0.3) sha256=add154f4f399243cbe070806ed41b96906942e7f5259bb1fe6daf2ec8f497194
   fast_blank (1.0.1) sha256=269fc30414fed4e6403bc4a49081e1ea539f8b9226e59276ed1efaefabaa17ea
   fastimage (2.2.6) sha256=59fab1aa32cc6238b98e6c89071c446d8c2f86ea3dbf795b55bba80fc47bcf5a
-  ffi (1.15.5) sha256=6f2ed2fa68047962d6072b964420cba91d82ce6fa8ee251950c17fca6af3c2a0
+  ffi (1.16.3) sha256=6d3242ff10c87271b0675c58d68d3f10148fabc2ad6da52a18123f06078871fb
   ffi-compiler (1.0.1) sha256=019f389b078a2fec9de7f4f65771095f80a447e34436b4588bcb629e2a564c30
   fog-core (2.1.0) sha256=53e5d793554d7080d015ef13cd44b54027e421d924d9dba4ce3d83f95f37eda9
   fog-json (1.2.0) sha256=dd4f5ab362dbc72b687240bba9d2dd841d5dfe888a285797533f85c03ea548fe

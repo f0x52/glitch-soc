@@ -61,7 +61,7 @@ module.exports = {
     filename: 'js/[name]-[chunkhash].js',
     chunkFilename: 'js/[name]-[chunkhash].chunk.js',
     hotUpdateChunkFilename: 'js/[id]-[hash].hot-update.js',
-    hashFunction: 'xxhash64',
+    hashFunction: 'sha512',
     path: output.path,
     publicPath: output.publicPath,
   },

@@ -21,7 +21,7 @@ module Mastodon
     end
 
     def suffix
-      '+glitch-patched-2023-02-01'
+      '+glitch-patched-2024-02-01'
     end
 
     def to_a

@@ -218,8 +218,8 @@ module SignatureVerification
     if key_id.start_with?('acct:')
       stoplight_wrap_request { ResolveAccountService.new.call(key_id.gsub(/\Aacct:/, '')) }
     elsif !ActivityPub::TagManager.instance.local_uri?(key_id)
-      account   = ActivityPub::TagManager.instance.uri_to_resource(key_id, Account)
-      account ||= stoplight_wrap_request { ActivityPub::FetchRemoteKeyService.new.call(key_id, id: false) }
+      account   = ActivityPub::TagManager.instance.uri_to_actor(key_id)
+      account ||= stoplight_wrap_request { ActivityPub::FetchRemoteKeyService.new.call(key_id, suppress_errors: false) }
       account
     end
   rescue Mastodon::HostValidationError
